@@ -6,6 +6,13 @@ PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
 if PROJECT_ROOT not in sys.path:
     sys.path.insert(0, PROJECT_ROOT)
 
+import nltk
+for _pkg in ["punkt", "punkt_tab", "stopwords", "wordnet", "omw-1.4"]:
+    try:
+        nltk.download(_pkg, quiet=True)
+    except Exception:
+        pass
+
 from recommendation import recommend_career
 from career_data.career_database import career_data, CAREER_DOMAINS
 from memory import memory

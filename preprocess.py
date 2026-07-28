@@ -2,21 +2,12 @@ import nltk
 
 # Ensure necessary NLTK data packages exist before tokenizing/lemmatizing
 def _ensure_nltk_data():
-    resources = [
-        ("tokenizers/punkt", "punkt"),
-        ("tokenizers/punkt_tab", "punkt_tab"),
-        ("corpora/stopwords", "stopwords"),
-        ("corpora/wordnet", "wordnet"),
-        ("corpora/omw-1.4", "omw-1.4")
-    ]
-    for path, pkg in resources:
+    packages = ["punkt", "punkt_tab", "stopwords", "wordnet", "omw-1.4"]
+    for pkg in packages:
         try:
-            nltk.data.find(path)
-        except LookupError:
-            try:
-                nltk.download(pkg, quiet=True)
-            except Exception:
-                pass
+            nltk.download(pkg, quiet=True)
+        except Exception:
+            pass
 
 _ensure_nltk_data()
 
