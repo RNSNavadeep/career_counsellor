@@ -1,0 +1,172 @@
+version: "3.1"
+
+nlu:
+
+- intent: greet
+  examples: |
+    - hi
+    - hello
+    - hey
+    - good morning
+    - good evening
+    - good afternoon
+    - howdy
+    - hi there
+    - what's up
+    - greetings
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you
+    - thank you
+    - thanks
+    - that's all
+    - I'm done
+    - exit
+    - quit
+    - take care
+
+- intent: ask_career
+  examples: |
+    # Tech
+    - I love python
+    - I like AI
+    - I enjoy machine learning
+    - I want to become an AI engineer
+    - I like coding
+    - I enjoy web development
+    - I like cybersecurity
+    - recommend me a career
+    - suggest a career
+    - I love mathematics
+    - I enjoy solving problems
+    - I like data science
+    - I like cloud computing
+    - I want a software job
+    - Which career suits me
+    - I enjoy making dashboards using Power BI
+    - I love deep learning and neural networks
+    - I'm interested in natural language processing
+    - I like building websites
+    - I enjoy frontend development with React
+    - I love backend development with Node.js
+    - I like Docker and Kubernetes
+    - I enjoy penetration testing
+    - I love statistics and data analysis
+    - I like pandas and numpy
+    - I want to work with transformers and LLMs
+    - I enjoy ethical hacking
+    - I'm passionate about cloud computing on AWS
+    - I like to build REST APIs
+    - machne learnng interests me
+    - I enjoy pyhton programming
+    - I lov AI and automaton
+
+    # Arts & Design
+    - I enjoy Figma wireframing and prototyping
+    - I love user interface and user experience design
+    - I want to be a UI UX designer
+    - I enjoy drawing, Photoshop, and vector illustration
+    - I am passionate about graphic design and visual arts
+    - I love branding, logo design, and typography
+    - I enjoy user research and usability testing
+    - I like designing mobile app interfaces in Figma
+    - I want to become a Graphic Designer
+
+    # Commerce & Business
+    - I love digital marketing and social media campaigns
+    - I am interested in SEO, SEM, and Google Ads
+    - I want to be a Business Analyst
+    - I enjoy agile methodology, scrum, and requirements gathering
+    - I love financial modeling and corporate valuation
+    - I enjoy accounting, financial statements, and DCF models
+    - I want to work in equity research and investment analysis
+    - I enjoy business analysis and process mapping
+    - I like content marketing and copywriting
+
+- intent: ask_roadmap
+  examples: |
+    - roadmap
+    - show me the roadmap
+    - give me a learning path
+    - what are the steps
+    - how do I get started
+    - what should I learn
+    - learning path
+    - steps to become one
+    - show me the path
+    - what is the roadmap
+    - career roadmap
+
+- intent: ask_salary
+  examples: |
+    - salary
+    - what is the salary
+    - how much do they earn
+    - what is the pay
+    - income
+    - package
+    - what is the CTC
+    - how much can I earn
+    - salary details
+    - pay scale
+    - compensation
+
+- intent: ask_skills
+  examples: |
+    - skills
+    - what skills do I need
+    - technologies
+    - required skills
+    - what should I know
+    - skill set
+    - what are the skills
+    - technical skills
+    - tools required
+    - what technology
+
+- intent: ask_companies
+  examples: |
+    - companies
+    - which companies hire
+    - top companies
+    - who hires
+    - hiring companies
+    - where can I work
+    - company names
+    - best companies
+    - who are the employers
+
+- intent: ask_projects
+  examples: |
+    - projects
+    - project ideas
+    - what projects should I build
+    - give me projects
+    - practice projects
+    - beginner projects
+    - advanced projects
+    - project suggestions
+
+- intent: ask_description
+  examples: |
+    - what does this career involve
+    - describe it
+    - tell me more
+    - about this career
+    - what is the job about
+    - description
+    - explain the role
+
+- intent: ask_courses
+  examples: |
+    - courses
+    - what courses should I take
+    - online courses
+    - where to learn
+    - best courses
+    - recommend a course
+    - learning resources
+    - tutorials

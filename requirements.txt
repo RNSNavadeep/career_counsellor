@@ -1,0 +1,15 @@
+# AI Career Counsellor — Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# Web UI
+streamlit>=1.32.0
+
+# NLP
+nltk==3.8.1
+pyspellchecker==0.8.1
+
+# Fuzzy matching / scoring engine
+rapidfuzz==3.6.1
+
+# Utilities
+colorama==0.4.6

@@ -1,0 +1,53 @@
+version: "3.1"
+
+rules:
+
+- rule: Goodbye Rule
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Greet Rule
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Career Recommendation Rule
+  steps:
+  - intent: ask_career
+  - action: action_recommend_career
+
+- rule: Roadmap Follow-up Rule
+  steps:
+  - intent: ask_roadmap
+  - action: action_recommend_career
+
+- rule: Salary Follow-up Rule
+  steps:
+  - intent: ask_salary
+  - action: action_recommend_career
+
+- rule: Skills Follow-up Rule
+  steps:
+  - intent: ask_skills
+  - action: action_recommend_career
+
+- rule: Companies Follow-up Rule
+  steps:
+  - intent: ask_companies
+  - action: action_recommend_career
+
+- rule: Projects Follow-up Rule
+  steps:
+  - intent: ask_projects
+  - action: action_recommend_career
+
+- rule: Description Follow-up Rule
+  steps:
+  - intent: ask_description
+  - action: action_recommend_career
+
+- rule: Courses Follow-up Rule
+  steps:
+  - intent: ask_courses
+  - action: action_recommend_career

@@ -1,0 +1,45 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - ask_career
+  - ask_roadmap
+  - ask_salary
+  - ask_skills
+  - ask_companies
+  - ask_projects
+  - ask_description
+  - ask_courses
+
+responses:
+  utter_greet:
+    - text: |
+        👋 Hello! I am your AI Career Counsellor.
+        
+        Tell me about your interests, skills, or tools you enjoy across Tech, Arts, or Commerce —
+        for example: "I love machine learning", "I enjoy Figma wireframing", or "I like digital marketing".
+        
+        I'll recommend the perfect career for you! 🚀
+
+  utter_goodbye:
+    - text: "👋 Best of luck on your career journey! You've got this! 🌟"
+
+  utter_fallback:
+    - text: |
+        🤔 I didn't quite understand that.
+        
+        Try telling me about your interests — for example:
+        • "I love Python and machine learning"
+        • "I enjoy Figma wireframing and UI UX design"
+        • "I like digital marketing and SEO"
+        • "I enjoy financial modeling and valuation"
+        
+        Or ask follow-up questions like: roadmap, salary, skills, companies, projects.
+
+actions:
+  - action_recommend_career
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

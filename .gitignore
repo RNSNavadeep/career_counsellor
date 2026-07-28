@@ -1,0 +1,31 @@
+# Virtual Environments
+venv/
+env/
+ENV/
+.venv/
+
+# Python cache & bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Rasa generated models & cache
+.rasa/
+rasa_bot/.rasa/
+rasa_bot/models/*.tar.gz
+!rasa_bot/models/.gitkeep
+
+# IDEs & Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Operating System
+.DS_Store
+Thumbs.db

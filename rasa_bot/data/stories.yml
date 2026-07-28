@@ -1,0 +1,75 @@
+version: "3.1"
+
+stories:
+
+- story: Greeting
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: Goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Career Recommendation
+  steps:
+  - intent: ask_career
+  - action: action_recommend_career
+
+- story: Career then Roadmap
+  steps:
+  - intent: ask_career
+  - action: action_recommend_career
+  - intent: ask_roadmap
+  - action: action_recommend_career
+
+- story: Career then Salary
+  steps:
+  - intent: ask_career
+  - action: action_recommend_career
+  - intent: ask_salary
+  - action: action_recommend_career
+
+- story: Career then Skills
+  steps:
+  - intent: ask_career
+  - action: action_recommend_career
+  - intent: ask_skills
+  - action: action_recommend_career
+
+- story: Career then Companies
+  steps:
+  - intent: ask_career
+  - action: action_recommend_career
+  - intent: ask_companies
+  - action: action_recommend_career
+
+- story: Career then Projects
+  steps:
+  - intent: ask_career
+  - action: action_recommend_career
+  - intent: ask_projects
+  - action: action_recommend_career
+
+- story: Career then Description
+  steps:
+  - intent: ask_career
+  - action: action_recommend_career
+  - intent: ask_description
+  - action: action_recommend_career
+
+- story: Full conversation flow
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_career
+  - action: action_recommend_career
+  - intent: ask_roadmap
+  - action: action_recommend_career
+  - intent: ask_salary
+  - action: action_recommend_career
+  - intent: ask_companies
+  - action: action_recommend_career
+  - intent: goodbye
+  - action: utter_goodbye
