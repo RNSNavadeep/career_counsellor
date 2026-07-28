@@ -21,7 +21,9 @@ st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
-*,*::before,*::after{box-sizing:border-box;font-family:'Inter',sans-serif!important;}
+*,*::before,*::after{box-sizing:border-box;}
+html,body,.stApp,p,div,h1,h2,h3,h4,h5,h6,label,input,select,textarea,.user-bubble,.bot-bubble,.career-card{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif!important;}
+[data-testid="stIconMaterial"],[data-testid="stSidebarCollapseButton"] *,[data-testid="collapsedControl"] *{font-family:'Material Symbols Rounded','Material Icons'!important;}
 
 .stApp{background:#0B1120!important;color:#F1F5F9!important;}
 .block-container{max-width:1200px!important;padding-top:0!important;padding-bottom:5rem!important;}
@@ -29,7 +31,7 @@ header,footer,#MainMenu,[data-testid="stHeader"],[data-testid="stToolbar"],[data
 
 /* Sidebar */
 section[data-testid="stSidebar"]{background:#0F172A!important;border-right:1px solid #1E293B!important;}
-section[data-testid="stSidebar"] *{color:#E2E8F0!important;}
+section[data-testid="stSidebar"] p,section[data-testid="stSidebar"] span,section[data-testid="stSidebar"] label,section[data-testid="stSidebar"] div{color:#E2E8F0!important;}
 section[data-testid="stSidebar"] h2,section[data-testid="stSidebar"] h3{color:#FFFFFF!important;font-weight:700!important;}
 
 /* Selectbox */
